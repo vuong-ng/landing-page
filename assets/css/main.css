@@ -78,7 +78,8 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: stretch;
+		align-items: center;
+		gap: 20px;
 	}
 
 		.row > * {
@@ -89,17 +90,17 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-		.row.aln-left {
+		/* .row.aln-left {
 			justify-content: flex-start;
-		}
-
+		} */
+/* 
 		.row.aln-center {
 			justify-content: center;
-		}
+		} */
 
-		.row.aln-right {
+		/* .row.aln-right {
 			justify-content: flex-end;
-		}
+		} */
 
 		.row.aln-top {
 			align-items: flex-start;
@@ -118,7 +119,8 @@ input, select, textarea {
 		}
 
 		.row > .col-1 {
-			width: 8.33333%;
+			/* width: 8.33333%; */
+			width:100%;
 		}
 
 		.row > .off-1 {
@@ -891,7 +893,9 @@ input, select, textarea {
 				}
 
 				.row > .col-6-medium {
-					width: 50%;
+					/* display: flex; */
+					width: 100%;
+					gap: 10px;
 				}
 
 				.row > .off-6-medium {
@@ -1527,6 +1531,10 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+	#main > header > p{
+		font-size:8px;
+	}
+
 	header {
 		margin: 0 0 1.5em 0;
 	}
@@ -1547,7 +1555,8 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		display: inline-block;
+		display: block;
+		width: 100%;
 	}
 
 		.image img {
@@ -1580,7 +1589,10 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
-
+		
+		.col-6-medium > img {
+			width:90%;
+		}
 /* Button */
 
 	input[type="button"],
@@ -1978,6 +1990,7 @@ input, select, textarea {
 
 			}
 
+
 			#main > .panel.intro {
 				padding: 0;
 				height: 20em;
@@ -2097,7 +2110,7 @@ input, select, textarea {
 
 					#main > .panel.intro header p {
 						letter-spacing: -0.015em;
-						font-size: 1.25em;
+						font-size: 1em;
 						margin: 0.25em 0 0 0;
 					}
 
